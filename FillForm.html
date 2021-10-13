@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FillForm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="stepWrap">
+      <div class="step">
+        <div class="ball">01</div>
+        <p>購物清單</p>
+      </div>
+      <div class="bottomLine"></div>
+      <div class="step">
+        <div class="ball activeMing">02</div>
+        <p>填寫資料</p>
+      </div>
+      <div class="bottomLine"></div>
+      <div class="step">
+        <div class="ball">03</div>
+        <p>完成訂單</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="unfoldBtnMing d-block d-lg-none">
+        展開明細 <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="container rans1s hideList" id="showList" >
+      <div class="d-flex justify-content-between fz16 borderMing">
+        <div class="productImgMing">
+          <img src="imgs/air-force.jfif" alt="" />
+        </div>
+        <div class="productDetailMing">
+          <p class="productNameMing">Nike Air Max 2021</p>
+          <p class="productCategoryMing">男鞋</p>
+          <p>尺寸 23</p>
+          <p>數量 1</p>
+          <p class="d-lg-block d-none">$5400</p>
+        </div>
+        <p class="">$5400</p>
+      </div>
+      <div class="d-flex justify-content-between fz16 borderMing">
+        <div class="productImgMing">
+          <img src="imgs/air-force.jfif" alt="" />
+        </div>
+        <div class="productDetailMing">
+          <p class="productNameMing">Nike Air Max 2021</p>
+          <p class="productCategoryMing">男鞋</p>
+          <p>尺寸 23</p>
+          <p>數量 1</p>
+          <p class="d-lg-block d-none">$5400</p>
+        </div>
+        <p class="">$5400</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <h4 class="formTitleMing">訂購人資料</h4>
+          <form action="" class="d-flex flex-column">
+            <label for="" class="formLabelMing"
+              >姓名 <span class="starMing"> *</span></label
+            >
+            <input type="text" class="formInputMing" />
+            <label for="" class="formLabelMing"
+              >手機 <span class="starMing"> *</span></label
+            >
+            <input type="text" class="formInputMing" />
+            <label for="" class="formLabelMing"
+              >電子郵件 <span class="starMing"> *</span></label
+            >
+            <input type="text" class="formInputMing" />
+            <label for="" class="formLabelMing"
+              >聯絡地址 <span class="starMing"> *</span></label
+            >
+            <input type="text" class="formInputMing" />
+            <label for="" class="formLabelMing"
+              >配送方式 <span class="starMing"> *</span></label
+            >
+            <select
+              name=""
+              id=""
+              class="formInputMing pretty-select"
+              style="height: 55px"
+            >
+              <option value="">- - 請選擇 - -</option>
+              <option value="">超商取貨</option>
+              <option value="">宅配到府</option>
+            </select>
+            <label for="" class="formLabelMing"
+              >付款方式 <span class="starMing"> *</span></label
+            >
+            <select
+              name=""
+              id=""
+              class="formInputMing pretty-select"
+              style="height: 55px"
+            >
+              <option value="">- - 請選擇 - -</option>
+              <option value="">貨到付款</option>
+              <option value="">信用卡付款</option>
+            </select>
+            <div class="d-flex my-3">
+              <input
+                type="checkbox"
+                class="formInputMing"
+                style="width: 24px; height: 24px; margin-top: 30px"
+              />
+              <p class="consigneeTitle" style="margin-top: 30px">
+                新增收件人資料
+              </p>
+            </div>
+            <input
+              type="text"
+              class="formInputMing consignee"
+              placeholder="請輸入收件人姓名"
+            />
+            <input
+              type="text"
+              class="formInputMing consignee"
+              placeholder="請輸入收件人電話"
+            />
+            <textarea
+              name=""
+              id=""
+              class="formInputMing consignee"
+              placeholder="請輸入備註事項(選填)"
+            ></textarea>
+            
+          </form>
+          <div class="btnMing mx-auto mb-5">送出訂單</div>
+        </div>
+        <div class="col-lg-4 order">
+          <h4 class="d-lg-block d-none abstractMing">訂單摘要</h4>
+          <div class="d-flex justify-content-between calculate2 fz16">
+            <div class="calculateLeft">
+              <p>小計</p>
+              <p>預估運費及手續費</p>
+              <p>其他折扣</p>
+            </div>
+
+            <div class="calculateRight">
+              <p>$10800</p>
+              <p>
+                <i
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  class="far fa-question-circle d-lg-none d-inline-block q1"
+                  title="消費金額達NT$ 6000元享9折優惠"
+                ></i>
+                $
+                <span class="shippingFeeMing">0</span>
+              </p>
+              <p>
+                <i
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  class="far fa-question-circle d-lg-none d-inline-block"
+                  title="適用於NT$ 4500以上之訂單"
+                ></i>
+                -$
+                <span class="discountMing">1080</span>
+              </p>
+            </div>
+          </div>
+          <div class="separateLine"></div>
+          <div
+            class="
+              d-flex
+              justify-content-between
+              calculate2
+              totalPriceMing
+              fz16
+            "
+          >
+            <div class="calculateLeft">
+              <p>總計</p>
+            </div>
+            <div class="calculateRight">
+              <p class="totalMing">NT$ 9720</p>
+            </div>
+          </div>
+          <div class="d-lg-block d-none">
+            <div class="d-flex justify-content-between fz16">
+              <div class="productImgMing">
+                <img src="imgs/air-force.jfif" alt="" />
+              </div>
+              <div class="productDetailMing">
+                <p class="productNameMing">Nike Air Max 2021</p>
+                <p class="productCategoryMing">男鞋</p>
+                <p>尺寸 23</p>
+                <p>數量 1</p>
+                <p class="d-lg-block d-none">$5400</p>
+              </div>
+              <p class="d-block d-lg-none">$5400</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+      });
+      const unfoldBtnMing = document.querySelector('.unfoldBtnMing')
+      const showList = document.querySelector('#showList')
+      unfoldBtnMing.addEventListener('touchstart',()=>{
+        showList.classList.toggle('showList')
+      })
+    </script>
+  </body>
+</html>

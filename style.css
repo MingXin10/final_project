@@ -30,7 +30,7 @@
   font-size: 20px;
   background-color: var(--orange);
   height: 50px;
-  width: 330px;
+  max-width: 330px;
   border-radius: 25px;
   color: white;
   text-align: center;
@@ -103,6 +103,7 @@ display: block;
 .fz16 {
   font-size: 16px;
 }
+
 .formLabelMing {
   margin: 30px 0 15px 75px;
   font-size: 20px;
@@ -125,9 +126,8 @@ display: block;
 }
 .borderMing{
   border-bottom: 1px solid var(--gray4);
-  padding:15px;
-  margin-top: 15px;
-  /* border-radius: 4px; */
+  /* padding:15px; */
+  margin-bottom: 15px;
 }
 
 .consigneeTitle {
@@ -255,4 +255,12 @@ display: block;
 .calculate2 {
   max-width: 690px;
   margin: 20px auto 0;
+}
+#cardCancelBtnMing{
+  background-color: var(--error);
+  color: #FFF;
+}
+#cardSendBtnMing{
+  background-color:var(--success);
+  color: #FFF;
 }

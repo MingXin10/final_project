@@ -12,9 +12,7 @@
 * {
   font-family: "Roboto", sans-serif;
 }
-.trans1s{
-  transition: 1s;
-}
+
 .empty {
   display: flex;
   justify-content: center;
@@ -84,11 +82,15 @@
   text-align: center;
   cursor: pointer;
 }
-.hideList{
-  display: none;
+.hideList {
+  height: 0;
+  overflow: hidden;
 }
-.showList{
-display: block;
+.showList {
+  height: auto;
+}
+#showList {
+  transition: all 2s ease-in-out;
 }
 
 .cartTitleMing {
@@ -124,7 +126,7 @@ display: block;
   width: 100%;
   /* max-width: 490px; 帶修正 */
 }
-.borderMing{
+.borderMing {
   border-bottom: 1px solid var(--gray4);
   /* padding:15px; */
   margin-bottom: 15px;
@@ -173,7 +175,7 @@ display: block;
     order: -1;
   }
 }
-.abstractMing{
+.abstractMing {
   margin-top: 90px;
 }
 .itemListMing {
@@ -256,11 +258,11 @@ display: block;
   max-width: 690px;
   margin: 20px auto 0;
 }
-#cardCancelBtnMing{
+#cardCancelBtnMing {
   background-color: var(--error);
-  color: #FFF;
+  color: #fff;
 }
-#cardSendBtnMing{
-  background-color:var(--success);
-  color: #FFF;
+#cardSendBtnMing {
+  background-color: var(--success);
+  color: #fff;
 }
